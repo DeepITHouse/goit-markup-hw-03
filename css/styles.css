@@ -36,6 +36,10 @@ button{
     font-family: inherit;
 }
 
+img{
+    display: block;
+}
+
 address{
     font-style: normal;
 }
@@ -76,9 +80,12 @@ address{
 
 /* ------Header/Logo------ */
 
-.header-container{
-    background-color: var(--white-text-color);
+.header{
     border-bottom: 1px solid #ECECEC;
+    background-color: var(--white-text-color);
+}
+
+.header-container{
     align-items: center;
     display: flex;
 }
@@ -298,7 +305,9 @@ address{
 
 .poster{
     padding: 20px 24px;
-    border: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
 }
 
 .gallery-list h2{
@@ -307,9 +316,6 @@ address{
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-}
-
-.gallery-list h2:not(:last-child){
     margin-bottom: 4px;
 }
 
@@ -342,8 +348,11 @@ address{
 }
 
 .wwd-item{
-    margin-right: 30px;
     text-align: center;
+}
+
+.wwd-item:not(:last-child){
+    margin-right: 30px;
 }
 
 /*------ Team ------*/
@@ -408,10 +417,8 @@ address{
 
 .footer{
     background-color: var(--bg-dark-color);
-}
-
-.footer-container{
-    display: block;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .footer-logo{
@@ -422,7 +429,6 @@ address{
     line-height: 1.19;
     letter-spacing: 0.03em;
     display: inline-block;
-    padding-top: 60px;
     padding-bottom: 20px;
 }
 
@@ -433,6 +439,10 @@ address{
     line-height: 1.71;
     letter-spacing: 0.03em;
     padding-bottom: 9px;
+}
+
+.footer-contacts:not(:last-child){
+    margin-bottom: 9px;
 }
 
 .footer-mail{
@@ -451,5 +461,4 @@ address{
     line-height: 1.71;
     letter-spacing: 0.03em;
     display: inline-block;
-    padding-bottom: 60px;
 }
