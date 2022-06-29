@@ -429,7 +429,7 @@ address{
     line-height: 1.19;
     letter-spacing: 0.03em;
     display: inline-block;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .adress{
@@ -438,7 +438,6 @@ address{
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    padding-bottom: 9px;
 }
 
 .footer-contacts:not(:last-child){
@@ -451,7 +450,6 @@ address{
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    padding-bottom: 9px;
 }
 
 .footer-tel{
